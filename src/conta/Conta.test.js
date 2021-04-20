@@ -17,7 +17,7 @@ describe('Componente de conta', () =>{
         
         render(<Conta saldo={1000} realizarTransacao={funcaoRealizarTransacao}/>);
 
-        fireEvent.click(screen.getByText('Realizar operação'))
+        fireEvent.click(screen.getByText('Realizar operação'));
 
         expect(funcaoRealizarTransacao).toHaveBeenCalled();
 
